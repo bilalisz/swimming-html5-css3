@@ -1,13 +1,86 @@
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
+@media all and (max-width: 576px) {
+  .heading-and-button {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header > ul {
+    padding: 0;
+    display: none;
+    background-color: #2fa7ce;
+  }
+  .header ul li {
+    display: block;
+    padding: 15px 0px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .header li a {
+    color: white;
+  }
+
+  .heading-and-button #toggle-open {
+    display: block;
+    margin-right: 10px;
+  }
+  .heading-and-button #toggle-close {
+    display: none;
+    margin-right: 10px;
+  }
+
+  .hero-card-section {
+    position: absolute;
+    width: 100vw;
+    bottom: -12%;
+
+    display: flex;
+    justify-content: center;
+    transform: translate(-50%);
+  }
+  /* .hero-card-section div {
+    margin: 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    color: #fff;
+    font-size: medium;
+  } */
+  .hero-card-section div:nth-child(1) {
+    display: none;
+  }
+  .hero-card-section div:nth-child(4) {
+    display: none;
+  }
+  #toggle-open {
+    margin-right: 10px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-}
+/* @media (max-width: 768px) {
+  .hero-card-section {
+    position: absolute;
+    width: 100vw;
+    bottom: -12%;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform: translate(-50%);
+  }
+  .hero-card-section div {
+    margin: 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    color: #fff;
+    font-size: medium;
+  }
+  .hero-card-section div:nth-child(4) {
+    display: none;
+  }
+} */
 
 /* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .header {
     display: flex;
     flex-direction: column;
@@ -28,20 +101,26 @@
     color: white;
   }
 
-  .heading-and-button #toogle {
+  .heading-and-button #toggle-open {
     display: block;
+    margin-right: 10px;
   }
+  .heading-and-button #toggle-close {
+    display: none;
+    margin-right: 10px;
+  }
+
   .header .heading-and-button {
     display: inline-flex;
     justify-content: space-between;
   }
-}
+} */
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media all and (min-width: 1200px) {
+/* @media all and (min-width: 1200px) {
   .hero-card-section {
     position: absolute;
-    width: 70%;
+    width: 900px;
     bottom: -12%;
     left: 50%;
     z-index: 999;
@@ -49,17 +128,4 @@
     justify-content: space-between;
     transform: translate(-50%);
   }
-}
-@media all and (max-width: 1100px) {
-  .hero-card-section {
-    position: absolute;
-    width: 80%;
-    margin: 0 auto;
-    bottom: -12%;
-    left: 50%;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    transform: translate(-50%);
-  }
-}
+} */

@@ -1,55 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/responsive.css">
+    <!-- <link rel="stylesheet" href="/styles/responsive.css"> -->
     <title>Swimming</title>
-</head>
-<body>
+  </head>
 
-  <div class="container">
-    <header class="header">
-       <div class="heading-and-button"> <h1 class="h1">Swimming</h1><span id="toogle" onclick="toogleBtn()"><i class="fas fa-list"></i></span></div>
-        <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallary</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contacts</a></li>
-        </ul>
-     </header>
-     <section class="hero-section">
-       
-       <div class="hero-card-section">
-        <div>
-          <h3>Register for swim lessons</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, Lorem ipsum dolor , <b style="font-size: 20px;">></b>
-          </p>
+  <body>
+
+    <div class="container">
+      <header class="header">
+        <div class="heading-and-button">
+          <h1 class="h1">Swimming</h1>
+          <div>
+            <span id="toggle-open" onclick="toogleBtn()"><i id="icon" class="fas fa-list"></i></span>
+            <span id="toggle-close" onclick="toogleBtnClose()"><i id="icon" class="fas fa-times"></i></span>
+          </div>
         </div>
-        <div> <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, Lorem ipsum dolor , <b style="font-size: 20px;">></b>
-          </p></div>
-        <div> <h3>Register for swim lessons</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, Lorem ipsum dolor , <b style="font-size: 20px;">></b>
-          </p></div>
-        <div> <h3>Register for swim lessons</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, Lorem ipsum dolor , <b style="font-size: 20px;">></b>
-          </p></div>
-       </div>
-       
-        
-     </section>
-  </div>
-   
-    
-</body>
-<script src="script.js"></script>
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallary</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </header>
+      <section class="hero-section">
+
+        <div class="hero-card-section">
+          <div>
+            <h3>Register for swim lessons</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, Lorem ipsum dolor , <b
+                style="font-size: 20px;">></b>
+            </p>
+          </div>
+          <div>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, Lorem ipsum dolor , <b
+                style="font-size: 20px;">></b>
+            </p>
+          </div>
+          <div>
+            <h3>Register for swim lessons</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, Lorem ipsum dolor , <b
+                style="font-size: 20px;">></b>
+            </p>
+          </div>
+          <div>
+            <h3>Register for swim lessons</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, Lorem ipsum dolor , <b
+                style="font-size: 20px;">></b>
+            </p>
+          </div>
+        </div>
+
+
+      </section>
+    </div>
+
+    <main style="    margin: 100px 100px 10px 100px;">
+      <!-- section 2 -->
+      <div class="section-two">
+        <section class="section-two-left">
+          <h3>Wlecome to our School!!</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia laboriosam aperiam quo eaque eius iusto
+            perferendis enim! Dolor consequuntur provident expedita molestias pariatur optio, obcaecati nesciunt quae,
+            repellendus aperiam nam aut officiis?</p>
+            <button class="read-more-btn">Read More</button>
+  
+        </section>
+        <section class="section-two-right">
+          <img src="/images/baby-swim.png" alt="boby-img">
+  
+        </section>
+      </div>
+            <!-- section 3 -->
+
+      <div class="section-two">
+        <section class="section-two-left" style="order: 2;">
+          <h3>Swimming lessons for Childen and teens</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia laboriosam aperiam quo eaque eius iusto
+            perferendis enim! Dolor consequuntur provident expedita molestias pariatur optio, obcaecati nesciunt quae,
+            repellendus aperiam nam aut officiis?</p>
+            <button class="read-more-btn">Read More</button>
+  
+        </section>
+        <section class="section-two-right">
+          <img src="/images/pool.png" alt="boby-img">
+  
+        </section>
+      </div>
+      
+
+    </main>
+    <!-- section 4 -->
+    <section class="section-4">
+      <div class="img-wrapper"></div>
+      <div class="section-4-content">
+        <div>
+          <h1>Why Our Swimming school is rated #1 in the region.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dignissimos sed, hic natus magnam enim quod alias dolor! Nemo, ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ut?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dignissimos sed, hic natus magnam enim quod alias dolor! Nemo, ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ut?</p>
+          <button>Read More</button>
+        </div>
+
+      </div>
+    </section>
+<!-- section 5 -->
+<section class="section-5" >
+  <section>
+   <div>
+    <h3>Our events</h3>  
+    <ul>
+      <li>1 Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+      <li>2 Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+      <li>3 Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+      <li>4 Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+      <li>5 Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+      <li>6 Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+      
+    </ul>
+   </div>
+</section>
+  <section>
+    <img src="/images/underwate.png" alt="underwater">
+  </section>
+</section>
+
+  </body>
+  <script src="script.js"></script>
+
 </html>
