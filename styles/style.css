@@ -70,7 +70,7 @@ p {
 
 .header .nav-list {
   padding: 10px;
-  /* transition: ease all 0.5s; */
+  display: block;
 }
 
 .trans {
@@ -89,6 +89,13 @@ p {
   background-color: #959497;
   background-image: linear-gradient(#56c2de, #194aa8);
   border-radius: 4px;
+}
+
+.heading-and-button {
+  display: block;
+}
+.header #toggle-open {
+  display: none;
 }
 
 .header li a {
@@ -116,14 +123,15 @@ p {
   margin-bottom: 20px;
   bottom: -160px;
   left: 50%;
-  z-index: 999;
   display: flex;
   justify-content: space-between;
   transform: translate(-50%);
+  display: flex;
+  justify-content: space-between;
 }
 .hero-card-section div {
   width: 200px;
-  /* height: 137px; */
+
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 10px;
   color: #fff;
@@ -152,14 +160,13 @@ p {
   display: flex;
   justify-content: space-between;
   background-color: #dfdfdf;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 .section-two-left {
-  width: 100%;
+  width: auto;
   height: auto;
   display: flex;
   flex-direction: column;
-  padding: 50px 0px 0px 30px;
+  padding: 50px 0px 0px 0px;
   flex: 1;
 }
 .section-two-left div {
@@ -169,15 +176,19 @@ p {
 .section-two-right {
   width: 100%;
   height: auto;
-  background-color: blue;
+
   flex: 1;
 }
-.section-two-right img {
+.section-two-right #baby-img-lg {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
+  overflow: hidden;
+}
+.section-two-right #baby-img-md {
+  display: none;
 }
 
 /* section-3 */
@@ -207,12 +218,10 @@ p {
   height: inherit;
   background-color: rgb(185, 34, 42);
   background-image: linear-gradient(#f32b32ec, #e72472);
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .section-4 .section-4-content div {
-  /* width: 70%;*/
   height: auto;
-  /* background-color: green; */
   margin: 25px;
   color: #fff;
   padding: 10px;
@@ -234,13 +243,11 @@ p {
 /* section-5 */
 .section-5 {
   margin: 50px 10px 50px 10px;
-  /* padding: 0px 10px; */
   display: flex;
   justify-content: center;
 }
 .section-5 div:nth-child(1) {
-  /* width: 613px; */
-  width: 50%;
+  flex: 1;
   height: 400px;
   background-image: linear-gradient(#fa7c07, #fa9907);
   margin: 0px 10px;
@@ -260,7 +267,7 @@ p {
 }
 
 .section-5 section:nth-child(2) {
-  width: 50%;
+  flex: 1;
   height: 400px;
   margin: 0px 10px;
 }
@@ -279,13 +286,10 @@ p {
   justify-content: center;
 }
 .section-6 div {
-  width: 230px;
-  display: flex;
-  flex-direction: column;
+  flex: 1;
   margin: 50px 10px 10px 10px;
   background-color: #efedf1;
   position: relative;
-  /* border: 2px solid white; */
   padding: 5px 30px;
   box-shadow: 0px 0px 2px 0px rgb(0 0 0 / 90%);
 
@@ -326,11 +330,10 @@ p {
   margin: 20px 10px 10px 60px;
   padding: 10px 10px;
   display: flex;
-  justify-content: space-between;
 }
 
 .section-7 div:first-child {
-  width: 50%;
+  flex: 1;
   height: 400px;
   background-color: #4eaed4;
   color: #fff;
@@ -338,12 +341,6 @@ p {
 .section-7 div:first-child h4 {
   font-size: 25px;
   padding: 36px 60px 0px 50px;
-}
-.social-icons-1 {
-  /* width: 240px; */
-
-  /* margin: 30px 50px 0px 50px; */
-  border: 1px solid red;
 }
 
 .section-7 > div > div {
@@ -355,7 +352,7 @@ p {
 
 .section-7 > div:first-child div:last-child {
   display: flex;
-  padding: 10px 0px 0px 10px;
+  padding: 10px 0px 10px 10px;
 }
 .section-7 .social-icon {
   margin-left: 20px;
@@ -379,7 +376,7 @@ p {
 }
 
 .section-7 > div:nth-child(2) {
-  width: 50%;
+  flex: 1;
   height: 400px;
 }
 

@@ -1,131 +1,201 @@
-/* Small devices (landscape phones, 576px and up) */
-@media all and (max-width: 576px) {
-  .heading-and-button {
-    display: flex;
-    justify-content: space-between;
-  }
-  .header > ul {
-    padding: 0;
-    display: none;
-    background-color: #2fa7ce;
-  }
-  .header ul li {
-    display: block;
-    padding: 15px 0px;
-    font-size: 18px;
-    text-align: center;
-  }
-  .header li a {
-    color: white;
+/* media query for 1200px */
+@media only screen and (max-width: 1200px) {
+  .section-two {
+    margin: 200px 0px 0px 0px;
   }
 
-  .heading-and-button #toggle-open {
-    display: block;
-    margin-right: 10px;
-  }
-  .heading-and-button #toggle-close {
-    display: none;
-    margin-right: 10px;
-  }
-
-  .hero-card-section {
-    position: absolute;
-    width: 100vw;
-    bottom: -12%;
-
-    display: flex;
-    justify-content: center;
-    transform: translate(-50%);
-  }
-  /* .hero-card-section div {
-    margin: 10px 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  .section-two-left div {
+    margin: 10px;
+    text-align: left;
     padding: 10px;
+  }
+  .section-two-left h3 {
+    font-size: 27px;
+  }
+  .section-two-right img #baby-img-lg {
+    display: none;
+  }
+  .section-two-right img #baby-img-md {
+    display: block;
+  }
+  .section-3 {
+    margin: 10px;
+  }
+  .section-4 .section-4-content div {
+    height: auto;
+    margin: 10px;
     color: #fff;
-    font-size: medium;
-  } */
-  .hero-card-section div:nth-child(1) {
-    display: none;
+    padding: 10px;
   }
-  .hero-card-section div:nth-child(4) {
-    display: none;
+
+  .section-4 .section-4-content div h1 {
+    padding: 0px;
   }
-  #toggle-open {
-    margin-right: 10px;
+  .section-4 .section-4-content div p {
+    padding: 0px 0px;
+    font-size: 0.9rem;
+  }
+  .section-6 {
+    margin: 10px 10px 10px 10px;
+    padding: 0px;
+  }
+
+  .section-6 div p {
+    margin: 40px 10px 10px 0px;
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
-/* @media (max-width: 768px) {
-  .hero-card-section {
-    position: absolute;
-    width: 100vw;
-    bottom: -12%;
-    right: 0%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    transform: translate(-50%);
-  }
-  .hero-card-section div {
-    margin: 10px 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px;
-    color: #fff;
-    font-size: medium;
-  }
-  .hero-card-section div:nth-child(4) {
-    display: none;
-  }
-} */
+/* media query for 960px and below */
 
-/* Large devices (desktops, 992px and up) */
-/* @media (max-width: 992px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
+@media only screen and (max-width: 960px) {
+  .header ul li {
+    display: inline;
+    padding: 10px 10px;
+    font-size: 16px;
+    list-style: none;
+    color: #917c71;
   }
-  .header > ul {
-    padding: 0;
+
+  .section-two-left div {
+    padding: 0px 0px 0px 0px;
+  }
+  .section-two div p {
+    letter-spacing: 1px;
+    margin: 10px;
+    text-align: left;
+    line-height: 20px;
+  }
+  .section-two div .read-more-btn {
+    float: right;
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+  .section-4 {
+    width: 100vw;
+    height: 100vh;
+  }
+  .section-4 .section-4-content {
+    width: 40%;
+  }
+  .section-4 .section-4-content div p {
+    padding: 10px 10px;
+    line-height: 16px;
+  }
+
+  .section-5 ul li {
+    line-height: 40px;
+    font-size: 16px;
+  }
+
+  .section-6 div p {
+    margin: 50px 0px 0px 0px;
+    font-size: 14px;
+  }
+  .section-6 div h6 {
+    font-size: 15px;
+  }
+  .section-7 > div > div {
+    display: flex;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+}
+
+/* media query for 600px and below */
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  main {
+    margin: 100px 20px 0px 10px;
+  }
+  .header {
+    display: block;
+
+    padding: 0px;
+  }
+  .header h1 {
+    font-size: 20px;
+  }
+  .header .nav-list {
     display: none;
-    background-color: #2fa7ce;
+  }
+  .heading-and-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .header #toggle-open {
+    display: block;
   }
   .header ul li {
     display: block;
-    padding: 15px 0px;
-    font-size: 18px;
-    text-align: center;
-  }
-  .header li a {
-    color: white;
   }
 
-  .heading-and-button #toggle-open {
-    display: block;
-    margin-right: 10px;
+  .hero-section {
+    background-image: url("/images/bgimage_adobespark.png");
   }
-  .heading-and-button #toggle-close {
-    display: none;
-    margin-right: 10px;
-  }
-
-  .header .heading-and-button {
-    display: inline-flex;
-    justify-content: space-between;
-  }
-} */
-
-/* Extra large devices (large desktops, 1200px and up) */
-/* @media all and (min-width: 1200px) {
   .hero-card-section {
-    position: absolute;
-    width: 900px;
-    bottom: -12%;
-    left: 50%;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    transform: translate(-50%);
+    display: none;
   }
-} */
+
+  .hero-card-section div {
+    width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0px;
+    color: #fff;
+    font-size: 16px;
+  }
+  .hero-card-section div p {
+    padding-top: 10px;
+    line-height: normal;
+  }
+  .section-two {
+    flex-direction: column;
+    margin: 143px -93px 20px -100px;
+  }
+
+  .section-two-left {
+    order: 2;
+  }
+  .section-4 {
+    height: 70vh;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .section-4 .section-4-content {
+    position: absolute;
+    top: 0;
+    left: 4%;
+    width: 92%;
+    right: 4%;
+    height: 66%;
+    margin-top: 65px;
+  }
+  .section-4 .section-4-content div h1 {
+    font-size: 2rem;
+  }
+  .section-5 {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .section-5 div:nth-child(1) {
+    order: 2;
+  }
+  .section-5 section:nth-child(2) {
+    order: 1;
+  }
+  .section-6 {
+    margin-top: 100px;
+    display: none;
+  }
+
+  .section-7 {
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+  }
+}

@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
-    <!-- <link rel="stylesheet" href="/styles/responsive.css"> -->
+    <link rel="stylesheet" href="/styles/responsive.css">
     <title>Swimming</title>
   </head>
 
@@ -18,7 +18,7 @@
       <header class="header">
         <div class="heading-and-button">
           <h1 class="h1">Swimming</h1>
-          <div>
+          <div class="toggle-wrapper">
             <span id="toggle-open" onclick="toogleBtn()"><i id="icon" class="fas fa-list"></i></span>
             <span id="toggle-close" onclick="toogleBtnClose()"><i id="icon" class="fas fa-times"></i></span>
           </div>
@@ -32,6 +32,11 @@
         </ul>
       </header>
       <section class="hero-section">
+
+
+
+
+
 
         <div class="hero-card-section">
           <div>
@@ -71,7 +76,7 @@
     <main style="    margin: 100px 100px 10px 100px;">
 
       <!-- section 2 -->
-      <div class="section-two">
+      <div class="section-two" style="padding-bottom: 0px;">
         <section class="section-two-left">
           <div>
             <h3>Wlecome to our School!!</h3>
@@ -86,7 +91,8 @@
 
         </section>
         <section class="section-two-right">
-          <img src="/images/baby-swim.png" alt="boby-img">
+          <img id='baby-img-lg' src="/images/baby-swim.png" alt="boby-img">
+          <img id='baby-img-md' src="/images/baby-swim-1200px.png" alt="boby-img">
 
         </section>
       </div>
@@ -103,7 +109,9 @@
           </div>
         </section>
         <section class="section-two-right">
-          <img src="/images/pool.png" alt="boby-img">
+          <img id="baby-img-lg" src="/images/pool.png" alt="boby-img">
+          <img id="baby-img-md" src="/images/swimming-img.jpg" alt="boby-img">
+
 
         </section>
       </div>
