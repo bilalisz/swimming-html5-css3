@@ -117,6 +117,10 @@ p {
   position: relative;
 }
 
+.hero-silder {
+  display: none;
+}
+
 .hero-card-section {
   position: absolute;
   width: 930px;
@@ -126,12 +130,9 @@ p {
   display: flex;
   justify-content: space-between;
   transform: translate(-50%);
-  display: flex;
-  justify-content: space-between;
 }
 .hero-card-section div {
   width: 200px;
-
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 10px;
   color: #fff;
@@ -160,13 +161,14 @@ p {
   display: flex;
   justify-content: space-between;
   background-color: #dfdfdf;
+  height: 600px;
 }
 .section-two-left {
   width: auto;
   height: auto;
   display: flex;
   flex-direction: column;
-  padding: 50px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
   flex: 1;
 }
 .section-two-left div {
@@ -174,9 +176,6 @@ p {
 }
 
 .section-two-right {
-  width: 100%;
-  height: auto;
-
   flex: 1;
 }
 .section-two-right #baby-img-lg {
@@ -185,11 +184,10 @@ p {
   background-size: cover;
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
-.section-two-right #baby-img-md {
+/* .section-two-right #baby-img-md {
   display: none;
-}
+} */
 
 /* section-3 */
 .section-3 {
@@ -325,6 +323,11 @@ p {
 }
 .section-6 div:nth-child(4) {
 }
+
+.section-6-1 {
+  display: none;
+}
+
 /* section-7 */
 .section-7 {
   margin: 20px 10px 10px 60px;
